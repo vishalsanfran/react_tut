@@ -1,0 +1,23 @@
+import React from 'react';
+import PropTypes from 'prop-types';
+
+class Ingredient extends React.Component {
+  render() {
+    const {name, amount, measurement} = this.props;
+    return (
+      <li>
+        <span className="name">{name}: </span>
+        <span className="amount">{amount} </span>
+        <span className="measurement">{measurement}</span>
+      </li>
+    )
+  }
+}
+
+Ingredient.propTypes = {
+  amount: PropTypes.number,
+  measurement: PropTypes.string,
+  name: PropTypes.string.isRequired
+}
+
+export default Ingredient;
