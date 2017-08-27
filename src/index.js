@@ -5,7 +5,7 @@ import Menu from './components/Menu';
 import registerServiceWorker from './registerServiceWorker';
 import data from './data/static_recipes';
 
-
+window.React = React;
 ReactDOM.render(
   <Menu recipes={data} title="Delicious Recipes" />,
   document.getElementById('root'));

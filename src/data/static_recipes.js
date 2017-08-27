@@ -7,7 +7,8 @@ const data = [
       { "name": "Butter Lettuce", "amount": 2, "measurement": "cups" },
       { "name": "Yellow Squash", "amount": 1, "measurement": "med" },
       { "name": "Olive Oil", "amount": 0.5, "measurement": "cup" },
-      { "name": "Garlic", "amount": 3, "measurement": "cloves" }
+      { "name": "Garlic", "amount": 3, "measurement": "cloves" },
+      { "name": "Lemon"}
     ],
     "steps": [
       "Preheat the oven to 350 degrees.",
