@@ -4,9 +4,14 @@ import './index.css';
 import Menu from './components/Menu';
 import registerServiceWorker from './registerServiceWorker';
 import data from './data/static_recipes';
+import AddColorForm from './components_es6/AddColorForm';
 
 window.React = React;
 ReactDOM.render(
+  <AddColorForm />,
+  document.getElementById('colorpicker'));
+ReactDOM.render(
   <Menu recipes={data} title="Delicious Recipes" />,
   document.getElementById('root'));
+
 registerServiceWorker();
