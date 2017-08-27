@@ -1,4 +1,5 @@
 import React from 'react';
+
 const Instructions = ({title, steps}) =>
 <section className="instructions">
     <h2>{title}</h2>
@@ -7,4 +8,4 @@ const Instructions = ({title, steps}) =>
     )}
 </section>
 
-export default Instructions
+export default Instructions;
