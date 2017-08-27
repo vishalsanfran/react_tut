@@ -9,16 +9,4 @@ const Recipe = ({ name, ingredients, steps }) =>
         <Instructions title="Cooking instructions" steps={steps} />
    </section>
 
-const Menu = ({ title, recipes }) =>
-    <article>
-        <header>
-            <h1>{title}</h1>
-        </header>
-        <div className="recipes">
-            {recipes.map((recipe, i) =>
-                <Recipe key={i} {...recipe} />
-            )}
-        </div>
-    </article>
-
-export default Menu;
+export default Recipe;
