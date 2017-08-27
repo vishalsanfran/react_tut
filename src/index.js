@@ -1,4 +1,8 @@
-
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import Menu from './App';
+import registerServiceWorker from './registerServiceWorker';
 
 const data = [
   {
@@ -36,37 +40,8 @@ const data = [
     ]
   }
 ]
-const Recipe = ({name, ingredients, steps}}) => (
-  <section id={name.toLowerCase().replace(/ /g, "-")}>
-    <h1>{name}</h1>
-    <ul className="ingredients">
-    {ingredients.map((ingredient, i) =>
-      <li key={i}>{ingredient.name}</li>
-    )}
-    </ul>
-    <section className="instructions">
-      <h2>Cooking instructions</h2>
-      {steps.map((step, i) =>
-        <p key={i}>{step}</p>
-      )}
-    </section>
-  </section>
-)
-
-const Menu = ({title, recipes}) => (
-  <article>
-    <header>
-      <h1>{title}</h1>
-    </header>
-    <div className="recipes">
-      {recipes.map((recipe, i) =>
-        <Recipe key={i} {...recipe}>
-      )}
-    </div>
-  </article>
-)
 
 ReactDOM.render(
-  React.createElement(IngredientsList, {items}, null),
-  document.getElementById("container")
-);
+  <Menu recipes={data} title="Delicious Recipes" />,
+  document.getElementById('root'));
+registerServiceWorker();

@@ -1,8 +1,16 @@
 {
-  "name": "react_tut",
-  "version": "1.0.0",
-  "main": "index.js",
-  "repository": "https://github.com/vishalsanfran/react_tut",
-  "author": "vishalsanfran",
-  "license": "MIT"
+  "name": "recipes-app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-scripts": "1.0.11"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
 }
