@@ -1,5 +1,5 @@
 import React from 'react';
-import Color from './color'
+import Color from './Color'
 
 const ColorList = ({colors=[]}) =>
   <div className="color-list">

@@ -3,7 +3,7 @@ import {v4} from 'uuid';
 import AddColorForm from './components_es6/AddColorForm'
 import ColorList from './components/ColorList'
 
-class App extends React {
+class App extends Component {
   constructor(props) {
     super(props)
     this.state = {
@@ -31,8 +31,10 @@ class App extends React {
     return (
       <div className="app">
         <AddColorForm onNewColor={addColor} />
-        <ColorList colors={colors}>
+        <ColorList colors={colors} />
       </div>
     )
   }
 }
+
+export default App
