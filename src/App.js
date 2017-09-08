@@ -9,7 +9,22 @@ class App extends React {
     this.state = {
       colors: []
     }
+    this.addColor = this.addColor.bind(this);
   }
+
+  addColor(title, color) {
+    const colors = [
+      ...this.state.colors,
+      {
+        id: v4(),
+        title,
+        color,
+        rating: 0
+      }
+    ]
+    this.setState({colors})
+  }
+
   render() {
     const {addColor} = this;
     const {colors} = this.state;
